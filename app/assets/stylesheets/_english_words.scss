@@ -1,0 +1,40 @@
+// ↑使わなければ消す
+.flame {
+  width: 100%;
+  background-color: lightslategray;
+
+  // ヘッダー
+  .header {
+    background-color: pink;
+    height: 150px;
+  }
+  
+  // メインコンテンツ
+  .contents {
+    .contents1 {
+      height: 400px;
+      width: 960px;
+      background-color: skyblue;
+      display: flex;
+      justify-content: space-between;
+      &--right {
+        
+      }
+      
+      &--left {
+      }
+      
+    }
+    .contents2 {
+
+    }
+    
+  }
+  
+  // フッター 
+  .footer {
+    background-color: lightgreen;
+    height: 150px;
+  }
+  
+}

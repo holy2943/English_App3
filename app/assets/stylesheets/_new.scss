@@ -1,0 +1,39 @@
+// 新規登録画面のフレーム
+.new--contents {
+  width: 100%;
+  background-color: lightslategray;
+
+  // 新規登録画面のタイトル
+  &__title {
+    background-color: pink;
+    height: 50px;
+  }
+  
+  // 各種画面へのリンクフレーム
+  &__header {
+    height: 50px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: flex-start;
+    // 各種リンク先のscss
+    &__link{
+      padding-left: 10px;
+    }   
+  }
+
+  // 新規英単語登録部分
+  &__main {
+    background-color: lightgreen;
+    height: 530px;
+  }
+ 
+  // トップへのリダイレクト
+  &__redirect--top {
+    background-color: lightgoldenrodyellow;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;  
+    padding-right: 50px;
+  }
+  
+}
