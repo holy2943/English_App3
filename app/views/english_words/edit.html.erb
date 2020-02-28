@@ -1,0 +1,45 @@
+<%# 新規登録画面のフレーム %>
+<div class="new--contents">
+ 
+  <%# 新規登録画面のタイトル %>
+  <div class="new--contents__title">
+    単語編集
+  </div>
+
+  <%# 各種画面へのリンクフレーム %>
+  <div class="new--contents__header">
+    <%# 編集画面へのリンク %>
+    <div class="new--contents__header__link">
+      <%= link_to '登録', new_english_word_path, class: "header__link__btn" %>
+    </div>
+    <%# 削除画面へのリンク %>
+    <div class="new--contents__header__link">
+      <%= link_to '削除', '#' %>
+    </div>
+  </div>
+
+  <%# 新規英単語登録部分 %>
+  <div class="new--contents__main">
+      <div class="new--contents__main--english">
+      <%= form_with model: @english_word, class: :form, local: true do |form| %>
+        編集したい英単語
+        <%= form.text_field :key_word, placeholder: :英単語, class: :form__title %>
+      </div>
+      <div class="new--contents__main--japanese">
+      英単語の意味(日本語)
+      </div>
+      <div class="new--contents__main--grammar">
+        文法の種類(プルダウン選択)
+      </div>
+      <div class="new--contents__main--submit">
+        <%= form.submit '変更する', class: :form__btn %>
+      </div>
+      <%end%>
+    </div>
+
+  <%# トップへのリダイレクト %>
+  <div class="new--contents__redirect--top">
+    <%= link_to 'TOPに戻る', root_path, class: "new--contents__redirect--top--btn"%>
+  </div>
+
+</div>
