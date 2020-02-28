@@ -1,0 +1,43 @@
+<%# 新規登録画面のフレーム %>
+<div class="new--contents">
+ 
+  <%# 新規登録画面のタイトル %>
+  <div class="new--contents__title">
+    登録単語情報詳細
+  </div>
+
+  <%# 各種画面へのリンクフレーム %>
+  <div class="new--contents__header">
+    <%# 編集画面へのリンク %>
+    <div class="new--contents__header__link">
+      <%# showアクションのインスタンス変数@english_wordsを呼び出す %>
+      <%= link_to "編集", edit_english_word_path(@english_words.id), class: "postManage__edit" %> 
+    </div>
+    <%# 削除画面へのリンク %>
+    <div class="new--contents__header__link">
+      <%= link_to "削除", english_word_path(@english_words.id), method: :delete, class: "postManage__delete" %>
+    </div>
+  </div>
+
+  <%# 新規英単語登録部分 %>
+  <div class="new--contents__main">
+      <div class="new--contents__main--english">
+        英単語
+       <%= @english_words.key_word %>
+      </div>
+      <div class="new--contents__main--japanese">
+        英単語の意味(日本語)
+      </div>
+      <div class="new--contents__main--grammar">
+        文法
+      </div>
+      <div class="new--contents__main--submit">
+      </div>
+    </div>
+
+  <%# トップへのリダイレクト %>
+  <div class="new--contents__redirect--top">
+    <%= link_to 'TOPに戻る', root_path, class:"new--contents__redirect--top--btn"%>
+  </div>
+
+</div>

@@ -12,7 +12,9 @@
     <%# カレンダー&youtube %>
     <div class="contents1">
       <div class="content1--right">
-        カレンダー
+      <% @english_words.each do |english_word|%>
+        <%= link_to english_word.key_word, english_word_path(english_word.id), class: "content__right__top--title"  %>
+      <%end%>  
       </div>
       <div class="content1--left">
         youtube動画(フォニックス英単語)
@@ -21,8 +23,8 @@
     <%# メニューボタン %>
     <div class="contents2">
       <div class="content2--bottom">
-        <%= link_to '新規単語登録', new_english_word_path, class: "content2--bottom--btn" %>
-        <%= link_to '単語の編集', '#' %>
+        <%= link_to '新規単語登録', new_english_word_path, class: "content2--bottom--btn" %> 
+        <%= link_to '単語の一覧', '#', class: "content2--bottom--btn" %>
         <%= link_to '単語の削除', '#' %>
         <%= link_to 'テスト', '#' %>
       </div>
