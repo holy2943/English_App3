@@ -13,7 +13,7 @@
         <div class="content__left__flame">
           <% @english_words.each do |english_word|%>
         <div class="content__left__flame__box">
-            <%= link_to ("#{english_word.key_word}: 文法"), english_word_path(english_word.id), class: "content__left__box--word"  %> <%#式展開を記述("#{}")%>
+            <%= link_to ("#{english_word.key_word} : #{english_word.grammar}"), english_word_path(english_word.id), class: "content__left__box--word"  %> <%#式展開を記述("#{}")%>
         </div>
           <%end%>
         </div>  

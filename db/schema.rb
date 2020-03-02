@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_20_155757) do
+ActiveRecord::Schema.define(version: 2020_03_02_134943) do
 
   create_table "english_words", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "key_word"
     t.text "key_word_kana"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "grammar"
   end
 
 end
