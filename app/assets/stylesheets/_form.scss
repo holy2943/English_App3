@@ -1,0 +1,24 @@
+// 英単語フォーム
+.form__btn__english{
+  padding: 5px;
+  font-size: 16px;
+  width: 400px;
+  }
+// 日本語フォーム
+.form__btn__japanese{
+  width: 400px;
+  height: 150px;
+  overflow: scroll;
+  font-size: 16px;
+  padding:5px;
+}
+
+input.form__submit__btn{
+  // width:140px;
+  margin-left: 10px;
+}
+
+#english_word_grammar{
+  font-size: 16px;
+  height: 35px;
+}

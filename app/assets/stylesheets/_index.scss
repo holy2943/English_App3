@@ -1,0 +1,41 @@
+.contents__top {
+  background-color: gold;
+}
+// メインコンテンツ
+.contents__main {
+  display: flex;
+  justify-content: space-between;
+  // 英単語一覧情報
+  .content__left {
+    width: calc(100% - 70%);
+    &__title {
+      border: solid 1px #bebebe;
+      text-align: center;
+      font-size: 15px;
+    }
+    // 選択時に色が変わるように指定
+    &__flame{
+      height: 500px;
+      overflow: scroll;
+      &__box:hover{
+        background-color: gold;
+      }
+        &__box{
+          border-style: groove;
+          background-color: lightyellow;
+          margin: 5% 5% 2% 5%; //単語帳の枠外
+          padding:0 0 100px 10px; //単語帳の枠内
+          border: ridge;
+          border-radius: 0 30px 30px 0 ;
+          &--word{
+            font-size: 30px;
+            text-decoration: none;
+          }  
+        }
+      }
+    }
+    .content__right {
+      width: calc(100% - 30%);
+      background-color: lightseagreen;
+    }
+  }

@@ -1,21 +1,22 @@
-<div class="flame">
 
-  <%# ヘッダー %>
-  <div class="header">
-    <div class="header--message">
-      My_English_Practice
-    </div>
+  <div class="contents__top">
+    <%= link_to '新規単語登録', new_english_word_path, class: "content2--bottom--btn" %> 
+    <%= link_to 'テスト', '#' %>
   </div>
-
   <%# メインコンテンツ %>
   <div class="contents__main">
       <%# カレンダー&youtube %>
       <div class="content__left">
-        <% @english_words.each do |english_word|%>
-        <div class="content__left--box">
-          <%= link_to english_word.key_word, english_word_path(english_word.id), class: "content__left--box--word"  %>
+        <div class="content__left__title">
+          【 登録単語一覧 】 
         </div>
-        <%end%>  
+        <div class="content__left__flame">
+          <% @english_words.each do |english_word|%>
+        <div class="content__left__flame__box">
+            <%= link_to ("#{english_word.key_word}: 文法"), english_word_path(english_word.id), class: "content__left__box--word"  %> <%#式展開を記述("#{}")%>
+        </div>
+          <%end%>
+        </div>  
       </div>
       <%# メニューボタン %>
       <div class="content__right">
@@ -25,22 +26,3 @@
       </div>
   </div>
   
-  <div class="contents__bottom">
-    <%= link_to '新規単語登録', new_english_word_path, class: "content2--bottom--btn" %> 
-    <%= link_to '単語の一覧', '#', class: "content2--bottom--btn" %>
-    <%= link_to '単語の削除', '#' %>
-    <%= link_to 'テスト', '#' %>
-  </div>
-
-  <%# フッター  %>
-  <div class="footer">
-    <div class="footer--message">
-      フッター 
-      aaa
-      aaaaa
-      aaaaaa
-      
-    </div>
-  </div>
-    
-</div>
