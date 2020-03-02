@@ -1,39 +1,33 @@
 // 新規登録画面のフレーム
 .new--contents {
-  width: 100%;
-  background-color: lightslategray;
-
-  // 新規登録画面のタイトル
+  // 新規登録画面のタイトル(単語新規登録の文字部分)
   &__title {
-    background-color: pink;
-    height: 50px;
+    font-size: 26px;
   }
   
   // 各種画面へのリンクフレーム
-  &__header {
-    height: 50px;
-    background-color: skyblue;
+  .new--contents__header {
     display: flex;
     justify-content: flex-start;
-    // 各種リンク先のscss
     &__link{
       padding-left: 10px;
     }   
   }
 
-  // 新規英単語登録部分
-  &__main {
-    background-color: lightgreen;
-    height: 530px;
+  // 入力フォーム部分
+  .new--contents__main {
+    width: 50%;
+    margin: 20px 0px 20px 20px;
+    border: solid #dab550;
+    border-radius: 10px;
+    background-color: #dfbc5e;
+    &__word{
+      background-color: #ffffff;
+      border: groove;
+      font-size: 26px;
+      padding: 10px 0 10px 20px;
+      margin: 10px 10px 0 10px;
+    }
   }
- 
-  // トップへのリダイレクト
-  &__redirect--top {
-    background-color: lightgoldenrodyellow;
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;  
-    padding-right: 50px;
-  }
-  
+
 }

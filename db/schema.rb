@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_155757) do
 
   create_table "english_words", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "key_word"
+    t.text "key_word_kana"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
