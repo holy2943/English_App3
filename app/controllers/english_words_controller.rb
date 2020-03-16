@@ -33,6 +33,8 @@ class EnglishWordsController < ApplicationController
     redirect_to root_path
   end
 
+  def quiz
+  end  
 
   private
   def key_word_params
