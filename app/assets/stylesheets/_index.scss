@@ -34,8 +34,23 @@
         }
       }
     }
+
+    
+    
     .content__right {
       width: calc(100% - 30%);
-      background-color: lightseagreen;
+      border-left: solid;
+      &--box{
+      text-align: center;
+      }
+      #youtube{
+        margin-left: 20%;
+        padding-top: 5%;
+
+      }
     }
   }
+     .youtube__player{
+        margin-left: 28%;
+        padding-top: 10px;
+      }
