@@ -8,6 +8,7 @@
     const result = document.getElementById('result');
     const scoreLabel = document.querySelector('#result > p');
 
+
     const quizSet = [
       {q: 'What is A?', c:['A0','A1','A2']},//1
       {q: 'What is B?', c:['B0','B1','B2']},//2
@@ -94,9 +95,6 @@
       currentNum++; //そうでなければ新しいクイズを表示
       setQuiz();
       }
-
-
-
     });
   }
   window.addEventListener("load", test); //htmlファイルを全て読み込んだ後にjavascriptを読み込むように定義

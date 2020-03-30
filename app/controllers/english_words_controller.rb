@@ -1,6 +1,7 @@
 class EnglishWordsController < ApplicationController
   def index
     @english_words = EnglishWord.all 
+
   end
 
   def new
@@ -34,6 +35,7 @@ class EnglishWordsController < ApplicationController
   end
 
   def quiz
+    @quizzes = EnglishWord.all
   end  
 
   private
