@@ -1,9 +1,17 @@
   // フッター 
   .footer {
-    background-color: rgb(177, 214, 177);
+    width: 100%;  
+    background-color:#174a5c;
     height: 150px;
-    // background-color: #1e365a;
-    color: #000000;
+    color: #fff ;
+    text-align: center;
+  }
+  
+  .footer-menu li{
+    display: inline;
   }
 
-  
+  .fab{
+    font-size: 2em;
+    padding-left: 10px;
+  }
