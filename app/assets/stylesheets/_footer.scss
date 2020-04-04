@@ -1,17 +1,36 @@
   // フッター 
   .footer {
     width: 100%;  
-    background-color:#174a5c;
+    background-color:#bdba08;
     height: 150px;
     color: #fff ;
     text-align: center;
+    position: relative;
   }
   
   .footer-menu li{
     display: inline;
   }
+  .underbar{
+    display: inline;
+    text-decoration: none;
+  }
 
+  .icon-menu{
+    padding-top: 20px;
+  }
+  
   .fab{
     font-size: 2em;
     padding-left: 10px;
+  }
+  
+
+  .footer-bottom{
+    position:absolute;
+    bottom:30px;
+    left:0;
+    right:0;
+    margin:auto;
+
   }
