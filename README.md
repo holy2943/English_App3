@@ -45,3 +45,7 @@ DB
     |key_word_kana||
     |grammar|varchar||
 
+  ## usersテーブル
+    |Column|Type|Option|
+    |------|----|------|
+    
