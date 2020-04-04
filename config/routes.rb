@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: 'english_words#index'
   resources :english_words,except: :index do
     collection do
