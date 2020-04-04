@@ -27,12 +27,21 @@
         <li>service |</li>
         <li>content Us |</li>
       </ul>
-      <div class>
+      <div class="icon-menu">
+
+        <%= link_to 'https://twitter.com/home?lang=ja',class: :underbar do %>
         <i class="fab fa-twitter"></i>
+        <% end %>
+
+        <%= link_to 'https://line.me/ja/',class: :underbar do %>
         <i class="fab fa-line"></i>
-        <i class="fab fa-facebook-square"></i>
+        <% end %>
+
+        <%= link_to 'https://www.youtube.com/',class: :underbar do %>
+        <i class="fab fa-youtube-square"></i>
+        <% end %>
       </div>
-      <p>©︎ All rights reserved by holy2943.</p>
+      <p class="footer-bottom">©︎ All rights reserved by holy2943.</p>
     </div>
    <%# <script src="./youtube.js"></script> %>
   </body>
