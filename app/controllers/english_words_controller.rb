@@ -40,7 +40,7 @@ class EnglishWordsController < ApplicationController
 
   private
   def key_word_params
-    params.require(:english_word).permit(:key_word,:key_word_kana,:grammar)
+    params.require(:english_word).permit(:key_word,:key_word_kana,:grammar).merge(user_id: current_user.id)
   end
 
 end
