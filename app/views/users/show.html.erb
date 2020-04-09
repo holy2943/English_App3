@@ -1,0 +1,21 @@
+<div class="postTitle">
+  <%= @user.nickname %>さんの投稿一覧
+</div>
+
+<div class="postTitle">
+<% @english_word.each do |e| %>
+  <div class="content">
+    <div class="content__left">
+      <div class="content__left--image"></div>
+    </div>
+    <div class="content__right">
+      <div class="content__right__top">
+      </div>
+      <div class="content__right__bottom">
+        <div class="content__right__bottom--userName">
+        </div>
+        <div class="content__right__bottom--date">
+          <%= e.created_at %>
+ <% end %>         
+</div>
+
