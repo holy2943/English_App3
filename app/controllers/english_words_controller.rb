@@ -1,8 +1,6 @@
 class EnglishWordsController < ApplicationController
   def index
-    @english_words = EnglishWord.all 
-    # @english_word = EnglishWord.find(params[:id])
-
+    @english_words = EnglishWord.all
   end
 
   def new
