@@ -4,7 +4,7 @@
     <div class="contents__top--menu">
       <% if user_signed_in?%>
         <b><%= link_to '英単語の登録', new_english_word_path, class: "content2--bottom--btn" %></b> 
-        <b><%= link_to "#{current_user.nickname}さんのページ", new_english_word_path, class: "content2--bottom--btn"%></b>
+        <b><%= link_to "#{current_user.nickname}さんのページ", user_path(current_user), class: "content2--bottom--btn"%></b>
         <b><%= link_to '3択クイズ', quiz_english_words_path, class: "content2-bottom--btn" %></b>
         <b><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "content2-bottom--btn"%></b> 
       <% else %>

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :english_words do
     collection do
         get :quiz #quizアクションを追加
-    end
-  resources :users
+    end  
   end
+  resources :users, only: :show
 end
