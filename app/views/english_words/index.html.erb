@@ -4,6 +4,7 @@
     <div class="contents__top--menu">
       <% if user_signed_in?%>
         <b><%= link_to '英単語の登録', new_english_word_path, class: "content2--bottom--btn" %></b> 
+        <b><%= link_to "#{current_user.nickname}さんのページ", new_english_word_path, class: "content2--bottom--btn"%></b>
         <b><%= link_to '3択クイズ', quiz_english_words_path, class: "content2-bottom--btn" %></b>
         <b><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "content2-bottom--btn"%></b> 
       <% else %>
@@ -16,17 +17,13 @@
   <div class="contents__main">
       <%# カレンダー&youtube %>
       <div class="content__left"> 
-        <% if user_signed_in?%>
-           <b><div class="content__left__title"><%= %"【#{current_user.nickname}さんの登録単語一覧】"%></div></b>
-        <% end %>
+        <b><div class="content__left__title">【みんなの登録単語一覧】</div></b>
         <div class="content__left__flame">
-        <% if user_signed_in?%>
           <% @english_words.each do |english_word|%>
         <div class="content__left__flame__box">
             <%= link_to ("#{english_word.key_word} : #{english_word.grammar}"), english_word_path(english_word.id), class: "content__left__box--word"  %> <%#式展開を記述("#{}")%>
         </div>
           <% end %>
-        <% end %>
         </div>  
       </div>
       <%# メニューボタン %>
