@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     collection do
         get :quiz #quizアクションを追加
     end
+  resources :users
   end
 end
