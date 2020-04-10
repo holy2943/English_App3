@@ -10,6 +10,7 @@
   <div class="new--contents__header">
     <%# 編集画面へのリンク %>
     <div class="new--contents__header__link">
+    <% if user_signed_in? && current_user.id == @english_words.user_id%>
       <%# showアクションのインスタンス変数@english_wordsを呼び出す %>
       <%= link_to "編集", edit_english_word_path(@english_words.id), class: "postManage__edit" %> 
     </div>
@@ -17,6 +18,7 @@
     <div class="new--contents__header__link">
       <%= link_to "削除", english_word_path(@english_words.id), method: :delete, class: "postManage__delete" %>
     </div>
+    <% end %>
   </div>
 
   <%# 新規英単語登録部分 %>
